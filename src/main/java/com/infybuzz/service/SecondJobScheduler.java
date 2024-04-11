@@ -8,7 +8,8 @@ public class SecondJobScheduler {
 	
 
 	@Scheduled(cron = "*/1 * * * * *")
-	public void secondJobStarter() {
+	public String secondJobStarter() {
 			System.out.println("Job Executioned ");
+			return "success";
 	}
 }
